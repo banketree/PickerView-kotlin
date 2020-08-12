@@ -1,0 +1,29 @@
+apply from: "../app_build.gradle"
+
+def androidConfig = rootProject.ext.android
+def dependence = rootProject.ext.dependence
+
+android {
+    defaultConfig {
+        applicationId "com.bigkoo.pickerviewdemo"
+    }
+
+    flavorDimensions "verison"
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation dependence['appcompat']
+    implementation dependence['constraintlayout']
+    implementation dependence['gson']
+    api project(path: ':pickerview')
+
+
+}

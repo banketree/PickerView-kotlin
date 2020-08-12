@@ -1,0 +1,4 @@
+rootProject.name='PickerView-kotlin'
+include ':app'
+include ':pickerview'
+include ':wheelview'
