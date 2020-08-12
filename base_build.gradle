@@ -30,16 +30,16 @@ android {
 
     signingConfigs { //
         debug {
-            keyAlias signConfigs['keyAlias']
-            keyPassword signConfigs['keyPassword']
-            storePassword signConfigs['storePassword']
-            storeFile signConfigs['storeFile']
+//            keyAlias signConfigs['keyAlias']
+//            keyPassword signConfigs['keyPassword']
+//            storePassword signConfigs['storePassword']
+//            storeFile signConfigs['storeFile']
         }
         release {
-            keyAlias signConfigs['keyAlias']
-            keyPassword signConfigs['keyPassword']
-            storePassword signConfigs['storePassword']
-            storeFile signConfigs['storeFile']
+//            keyAlias signConfigs['keyAlias']
+//            keyPassword signConfigs['keyPassword']
+//            storePassword signConfigs['storePassword']
+//            storeFile signConfigs['storeFile']
         }
     }
 
